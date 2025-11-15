@@ -1,83 +1,93 @@
+// --- NAVEGACIÓN ---
 const navLinks = [
     {
-        id: "coffee", // Cambiado de 'cocktails' a 'coffee'
-        title: "Nuestro Café", // Cambiado de 'Cocktails' a 'Nuestro Café'
+        id: "carta",
+        title: "Nuestra Carta",
     },
     {
-        id: "about",
-        title: "Nosotros", // Cambiado de 'About Us' a 'Nosotros'
+        id: "nosotros",
+        title: "Nosotros",
     },
     {
-        id: "work",
-        title: "Nuestra Historia", // Cambiado de 'The Art' a 'Nuestra Historia'
+        id: "historia",
+        title: "Tradición",
     },
     {
-        id: "contact",
-        title: "Contacto", // Cambiado de 'Contact' a 'Contacto'
+        id: "contacto",
+        title: "Contacto",
     },
 ];
 
-const cocktailLists = [ // Ahora será la lista de Cafés
+// --- BEBIDAS (CAFÉS, JUGOS, ETC.) ---
+const beverageLists = [
     {
-        name: "Espresso",
-        country: "Clásico", // Origen o característica
-        detail: "Shot de café puro",
-        price: "S/ 6.00",
-    },
-    {
-        name: "Americano",
-        country: "Suave",
-        detail: "Espresso con agua caliente",
+        name: "Espresso Peruano",
+        country: "Origen: Villa Rica",
+        detail: "Shot concentrado de nuestro mejor grano.",
         price: "S/ 7.00",
     },
     {
-        name: "Latte",
-        country: "Cremoso",
-        detail: "Espresso y leche vaporizada",
-        price: "S/ 9.00",
+        name: "Café Pasado",
+        country: "Clásico Limeño",
+        detail: "Método tradicional, sabor balanceado.",
+        price: "S/ 8.00",
     },
     {
         name: "Cappuccino",
         country: "Espumoso",
-        detail: "Espresso, leche y espuma",
-        price: "S/ 9.00",
-    },
-    {
-        name: "Mocha",
-        country: "Dulce",
-        detail: "Espresso, chocolate y leche",
-        price: "S/ 11.00",
-    },
-];
-
-const mockTailLists = [ // Ahora será la lista de Postres y Dulces
-    {
-        name: "Galleta de Pistacho",
-        country: "Artesanal",
-        detail: "Con trozos de pistacho",
-        price: "S/ 8.00",
-    },
-    {
-        name: "Croissant de Almendras",
-        country: "Francés",
-        detail: "Relleno de crema de almendras",
+        detail: "Espresso, leche y espuma de leche.",
         price: "S/ 10.00",
     },
     {
-        name: "Cheesecake de Arándanos",
-        country: "Frutal",
-        detail: "Con salsa de arándanos",
+        name: "Jugo de Naranja",
+        country: "Fresco",
+        detail: "Jugo de naranjas Huando recién exprimido.",
         price: "S/ 12.00",
     },
     {
-        name: "Torta de Chocolate",
-        country: "Intenso",
-        detail: "Bizcocho húmedo con fudge",
+        name: "Chocolate Caliente",
+        country: "Cusqueño",
+        detail: "Con auténtico chocolate de taza.",
         price: "S/ 12.00",
     },
 ];
 
-const profileLists = [ // Se mantienen los paths, pero ahora podrían ser imágenes de personas disfrutando café
+// --- COMIDA (SÁNDWICHES Y POSTRES) ---
+const foodLists = [
+    {
+        name: "Pan con Chicharrón",
+        country: "El Clásico",
+        detail: "Con camote frito y sarza criolla en pan francés.",
+        price: "S/ 16.00",
+    },
+    {
+        name: "Butifarra",
+        country: "Tradicional",
+        detail: "Jamón del país, lechuga y sarza criolla.",
+        price: "S/ 15.00",
+    },
+    {
+        name: "Torta de Chocolate",
+        country: "Receta de Casa",
+        detail: "Bizcocho húmedo con fudge casero.",
+        price: "S/ 14.00",
+    },
+    {
+        name: "Alfajor de Manjarblanco",
+        country: "Dulce Limeño",
+        detail: "Dos galletas finas con manjarblanco y azúcar impalpable.",
+        price: "S/ 8.00",
+    },
+    {
+        name: "Cheesecake de Maracuyá",
+        country: "Frutal",
+        detail: "Base crocante con una salsa de maracuyá fresca.",
+        price: "S/ 14.00",
+    },
+];
+
+// --- IMÁGENES DE CLIENTES (SIN CAMBIOS) ---
+const profileLists = [
     {
         imgPath: "/images/profile1.png",
     },
@@ -92,37 +102,41 @@ const profileLists = [ // Se mantienen los paths, pero ahora podrían ser imáge
     },
 ];
 
-const featureLists = [ // Características de la cafetería/café
-    "Granos de Origen",
-    "Baristas Expertos",
+// --- CARACTERÍSTICAS DE LA CAFETERÍA ---
+const featureLists = [
+    "Café de Chanchamayo",
+    "Sándwiches Criollos",
+    "Postres Tradicionales",
     "Ambiente Acogedor",
-    "Postres Frescos Diarios",
 ];
 
-const goodLists = [ // Más detalles/beneficios
-    "Ingredientes Seleccionados",
-    "Tostado Artesanal",
-    "Preparación al Momento",
-    "Variedad de Métodos",
+// --- MÁS DETALLES / BENEFICIOS ---
+const goodLists = [
+    "Ingredientes Frescos del Día",
+    "Tostado Local Semanal",
+    "Jugos de Pura Fruta",
+    "Recetas de Familia",
 ];
 
-const storeInfo = { // Información de la cafetería
-    heading: "Dónde Encontrarnos", // Cambiado
-    address: "789, Calle del Café. #101, Lima, Perú 15001", // Cambiado
+// --- INFORMACIÓN DE LA TIENDA ---
+const storeInfo = {
+    heading: "Nuestro Local",
+    address: "Calle Schell 321, Miraflores, Lima 15074, Perú",
     contact: {
-        phone: "(01) 234-5678", // Cambiado
-        email: "hola@tucafeteria.com", // Cambiado
+        phone: "(01) 447-1234",
+        email: "hola@elcafecitodelima.com",
     },
 };
 
-const openingHours = [ // Horarios
-    { day: "Lun–Jue", time: "7:00am – 9pm" }, // Cambiado
-    { day: "Vie", time: "7:00am – 10pm" }, // Cambiado
-    { day: "Sáb", time: "8:00am – 10pm" }, // Cambiado
-    { day: "Dom", time: "8:00am – 8pm" }, // Cambiado
+// --- HORARIOS DE ATENCIÓN ---
+const openingHours = [
+    { day: "Lun–Vie", time: "7:00am – 9:00pm" },
+    { day: "Sáb", time: "8:00am – 10:00pm" },
+    { day: "Dom", time: "8:00am – 8:00pm" },
 ];
 
-const socials = [ // Redes sociales (se mantienen los iconos, pero la URL podría ser la de la cafetería)
+// --- REDES SOCIALES (SIN CAMBIOS) ---
+const socials = [
     {
         name: "Instagram",
         icon: "/images/insta.png",
@@ -140,45 +154,47 @@ const socials = [ // Redes sociales (se mantienen los iconos, pero la URL podrí
     },
 ];
 
-const sliderLists = [ // Items para un carrusel de imágenes/productos de café
+// --- CARRUSEL DE IMÁGENES / PRODUCTOS DESTACADOS ---
+const sliderLists = [
     {
         id: 1,
-        name: "Latte Art Maestro", // Cambiado
-        image: "/images/drink1.png", // Podrías cambiar estas imágenes a fotos de café
-        title: "El arte en cada taza", // Cambiado
+        name: "El Pan con Chicharrón",
+        image: "/images/slider-chicharron.png", // (Imagen sugerida)
+        title: "El desayuno limeño perfecto",
         description:
-            "Nuestros baristas crean diseños únicos en cada latte, combinando sabor y belleza. Disfruta de una experiencia visual y gustativa inigualable.", // Cambiado
+            "Nuestro chicharrón crujiente se sirve en pan francés fresco, con camote frito y sarza criolla recién preparada. Pídelo a cualquier hora.",
     },
     {
         id: 2,
-        name: "Café de Origen Peruano", // Cambiado
-        image: "/images/drink2.png",
-        title: "Sabores auténticos de la tierra", // Cambiado
+        name: "Café de Origen",
+        image: "/images/slider-cafe.png", // (Imagen sugerida)
+        title: "Directo de Chanchamayo",
         description:
-            "Seleccionamos los mejores granos de las regiones cafetaleras de Perú, ofreciendo un perfil de sabor rico y distintivo en cada sorbo.", // Cambiado
+            "Seleccionamos y tostamos localmente los mejores granos de la selva central peruana, garantizando un sabor y aroma incomparables.",
     },
     {
         id: 3,
-        name: "Postres Caseros", // Cambiado
-        image: "/images/drink3.png",
-        title: "El acompañamiento perfecto", // Cambiado
+        name: "Postres Limeños",
+        image: "/images/slider-postres.png", // (Imagen sugerida)
+        title: "El dulce sabor de la tradición",
         description:
-            "Cada día horneamos una variedad de postres frescos, desde galletas crujientes hasta tartas cremosas, ideales para tu café.", // Cambiado
+            "No te vayas sin probar nuestra torta de chocolate húmeda, nuestros alfajores o el clásico cheesecake de maracuyá.",
     },
     {
         id: 4,
-        name: "Ambiente para Trabajar", // Cambiado
-        image: "/images/drink4.png",
-        title: "Tu espacio ideal", // Cambiado
+        name: "Tu Punto de Encuentro",
+        image: "/images/slider-ambiente.png", // (Imagen sugerida)
+        title: "El ambiente ideal en Miraflores",
         description:
-            "Ofrecemos un ambiente tranquilo y con Wi-Fi, perfecto para estudiar, trabajar o simplemente relajarte con una buena taza de café.", // Cambiado
+            "Un espacio tranquilo y acogedor, perfecto para una reunión de trabajo, una tarde de estudio o una buena conversación con amigos.",
     },
 ];
 
+// --- EXPORTACIONES ---
 export {
     navLinks,
-    cocktailLists, // Ahora lista de cafés
-    mockTailLists, // Ahora lista de postres
+    beverageLists, // Renombrado de cocktailLists
+    foodLists,     // Renombrado de mockTailLists
     profileLists,
     featureLists,
     goodLists,
