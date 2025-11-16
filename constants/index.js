@@ -1,92 +1,76 @@
-// --- NAVEGACIÓN ---
 const navLinks = [
     {
-        id: "carta",
-        title: "Nuestra Carta",
+        id: "cocktails",
+        title: "Cocktails",
     },
     {
-        id: "nosotros",
-        title: "Nosotros",
+        id: "about",
+        title: "About Us",
     },
     {
-        id: "historia",
-        title: "Tradición",
+        id: "work",
+        title: "The Art",
     },
     {
-        id: "contacto",
-        title: "Contacto",
+        id: "contact",
+        title: "Contact",
     },
 ];
 
-// --- BEBIDAS (CAFÉS, JUGOS, ETC.) ---
-const beverageLists = [
+const cocktailLists = [
     {
-        name: "Espresso Peruano",
-        country: "Origen: Villa Rica",
-        detail: "Shot concentrado de nuestro mejor grano.",
-        price: "S/ 7.00",
+        name: "Chapel Hill Shiraz",
+        country: "AU",
+        detail: "Battle",
+        price: "$10",
     },
     {
-        name: "Café Pasado",
-        country: "Clásico Limeño",
-        detail: "Método tradicional, sabor balanceado.",
-        price: "S/ 8.00",
+        name: "Caten Malbee",
+        country: "AU",
+        detail: "Battle",
+        price: "$49",
     },
     {
-        name: "Cappuccino",
-        country: "Espumoso",
-        detail: "Espresso, leche y espuma de leche.",
-        price: "S/ 10.00",
+        name: "Rhino Pale Ale",
+        country: "CA",
+        detail: "750 ml",
+        price: "$20",
     },
     {
-        name: "Jugo de Naranja",
-        country: "Fresco",
-        detail: "Jugo de naranjas Huando recién exprimido.",
-        price: "S/ 12.00",
-    },
-    {
-        name: "Chocolate Caliente",
-        country: "Cusqueño",
-        detail: "Con auténtico chocolate de taza.",
-        price: "S/ 12.00",
+        name: "Irish Guinness",
+        country: "IE",
+        detail: "600 ml",
+        price: "$29",
     },
 ];
 
-// --- COMIDA (SÁNDWICHES Y POSTRES) ---
-const foodLists = [
+const mockTailLists = [
     {
-        name: "Pan con Chicharrón",
-        country: "El Clásico",
-        detail: "Con camote frito y sarza criolla en pan francés.",
-        price: "S/ 16.00",
+        name: "Tropical Bloom",
+        country: "US",
+        detail: "Battle",
+        price: "$10",
     },
     {
-        name: "Butifarra",
-        country: "Tradicional",
-        detail: "Jamón del país, lechuga y sarza criolla.",
-        price: "S/ 15.00",
+        name: "Passionfruit Mint",
+        country: "US",
+        detail: "Battle",
+        price: "$49",
     },
     {
-        name: "Torta de Chocolate",
-        country: "Receta de Casa",
-        detail: "Bizcocho húmedo con fudge casero.",
-        price: "S/ 14.00",
+        name: "Citrus Glow",
+        country: "CA",
+        detail: "750 ml",
+        price: "$20",
     },
     {
-        name: "Alfajor de Manjarblanco",
-        country: "Dulce Limeño",
-        detail: "Dos galletas finas con manjarblanco y azúcar impalpable.",
-        price: "S/ 8.00",
-    },
-    {
-        name: "Cheesecake de Maracuyá",
-        country: "Frutal",
-        detail: "Base crocante con una salsa de maracuyá fresca.",
-        price: "S/ 14.00",
+        name: "Lavender Fizz",
+        country: "IE",
+        detail: "600 ml",
+        price: "$29",
     },
 ];
 
-// --- IMÁGENES DE CLIENTES (SIN CAMBIOS) ---
 const profileLists = [
     {
         imgPath: "/images/profile1.png",
@@ -102,40 +86,36 @@ const profileLists = [
     },
 ];
 
-// --- CARACTERÍSTICAS DE LA CAFETERÍA ---
 const featureLists = [
-    "Café de Chanchamayo",
-    "Sándwiches Criollos",
-    "Postres Tradicionales",
-    "Ambiente Acogedor",
+    "Perfectly balanced blends",
+    "Garnished to perfection",
+    "Ice-cold every time",
+    "Expertly shaken & stirred",
 ];
 
-// --- MÁS DETALLES / BENEFICIOS ---
 const goodLists = [
-    "Ingredientes Frescos del Día",
-    "Tostado Local Semanal",
-    "Jugos de Pura Fruta",
-    "Recetas de Familia",
+    "Handpicked ingredients",
+    "Signature techniques",
+    "Bartending artistry in action",
+    "Freshly muddled flavors",
 ];
 
-// --- INFORMACIÓN DE LA TIENDA ---
 const storeInfo = {
-    heading: "Nuestro Local",
-    address: "Calle Schell 321, Miraflores, Lima 15074, Perú",
+    heading: "Where to Find Us",
+    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
     contact: {
-        phone: "(01) 447-1234",
-        email: "hola@elcafecitodelima.com",
+        phone: "(555) 987-6543",
+        email: "hello@jsmcocktail.com",
     },
 };
 
-// --- HORARIOS DE ATENCIÓN ---
 const openingHours = [
-    { day: "Lun–Vie", time: "7:00am – 9:00pm" },
-    { day: "Sáb", time: "8:00am – 10:00pm" },
-    { day: "Dom", time: "8:00am – 8:00pm" },
+    { day: "Mon–Thu", time: "11:00am – 12am" },
+    { day: "Fri", time: "11:00am – 2am" },
+    { day: "Sat", time: "9:00am – 2am" },
+    { day: "Sun", time: "9:00am – 1am" },
 ];
 
-// --- REDES SOCIALES (SIN CAMBIOS) ---
 const socials = [
     {
         name: "Instagram",
@@ -154,52 +134,50 @@ const socials = [
     },
 ];
 
-// --- CARRUSEL DE IMÁGENES / PRODUCTOS DESTACADOS ---
-const sliderLists = [
+const allCocktails = [
     {
         id: 1,
-        name: "El Pan con Chicharrón",
-        image: "/images/slider-chicharron.png", // (Imagen sugerida)
-        title: "El desayuno limeño perfecto",
+        name: "Classic Mojito",
+        image: "/images/drink1.png",
+        title: "Simple Ingredients, Bold Flavor",
         description:
-            "Nuestro chicharrón crujiente se sirve en pan francés fresco, con camote frito y sarza criolla recién preparada. Pídelo a cualquier hora.",
+            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
         id: 2,
-        name: "Café de Origen",
-        image: "/images/slider-cafe.png", // (Imagen sugerida)
-        title: "Directo de Chanchamayo",
+        name: "Raspberry Mojito",
+        image: "/images/drink2.png",
+        title: "A Zesty Classic That Never Fails",
         description:
-            "Seleccionamos y tostamos localmente los mejores granos de la selva central peruana, garantizando un sabor y aroma incomparables.",
+            "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
     },
     {
         id: 3,
-        name: "Postres Limeños",
-        image: "/images/slider-postres.png", // (Imagen sugerida)
-        title: "El dulce sabor de la tradición",
+        name: "Violet Breeze",
+        image: "/images/drink3.png",
+        title: "Simple Ingredients, Bold Flavor",
         description:
-            "No te vayas sin probar nuestra torta de chocolate húmeda, nuestros alfajores o el clásico cheesecake de maracuyá.",
+            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
         id: 4,
-        name: "Tu Punto de Encuentro",
-        image: "/images/slider-ambiente.png", // (Imagen sugerida)
-        title: "El ambiente ideal en Miraflores",
+        name: "Curacao Mojito",
+        image: "/images/drink4.png",
+        title: "Crafted With Care, Poured With Love",
         description:
-            "Un espacio tranquilo y acogedor, perfecto para una reunión de trabajo, una tarde de estudio o una buena conversación con amigos.",
+            "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
     },
 ];
 
-// --- EXPORTACIONES ---
 export {
     navLinks,
-    beverageLists, // Renombrado de cocktailLists
-    foodLists,     // Renombrado de mockTailLists
+    cocktailLists,
+    mockTailLists,
     profileLists,
     featureLists,
     goodLists,
     openingHours,
     storeInfo,
     socials,
-    sliderLists,
+    allCocktails,
 };
