@@ -1,83 +1,77 @@
 const navLinks = [
     {
-        id: "coffee", // Cambiado de 'cocktails' a 'coffee'
-        title: "Nuestro Café", // Cambiado de 'Cocktails' a 'Nuestro Café'
+        id: "cocktails",
+        title: "Cocktails",
     },
     {
         id: "about",
-        title: "Nosotros", // Cambiado de 'About Us' a 'Nosotros'
+        title: "About Us",
     },
     {
         id: "work",
-        title: "Nuestra Historia", // Cambiado de 'The Art' a 'Nuestra Historia'
+        title: "The Art",
     },
     {
         id: "contact",
-        title: "Contacto", // Cambiado de 'Contact' a 'Contacto'
+        title: "Contact",
     },
 ];
 
-const cocktailLists = [ // Ahora será la lista de Cafés
+const cocktailLists = [
     {
-        name: "Espresso",
-        country: "Clásico", // Origen o característica
-        detail: "Shot de café puro",
-        price: "S/ 6.00",
+        name: "Chapel Hill Shiraz",
+        country: "AU",
+        detail: "Battle",
+        price: "$10",
     },
     {
-        name: "Americano",
-        country: "Suave",
-        detail: "Espresso con agua caliente",
-        price: "S/ 7.00",
+        name: "Caten Malbee",
+        country: "AU",
+        detail: "Battle",
+        price: "$49",
     },
     {
-        name: "Latte",
-        country: "Cremoso",
-        detail: "Espresso y leche vaporizada",
-        price: "S/ 9.00",
+        name: "Rhino Pale Ale",
+        country: "CA",
+        detail: "750 ml",
+        price: "$20",
     },
     {
-        name: "Cappuccino",
-        country: "Espumoso",
-        detail: "Espresso, leche y espuma",
-        price: "S/ 9.00",
-    },
-    {
-        name: "Mocha",
-        country: "Dulce",
-        detail: "Espresso, chocolate y leche",
-        price: "S/ 11.00",
+        name: "Irish Guinness",
+        country: "IE",
+        detail: "600 ml",
+        price: "$29",
     },
 ];
 
-const mockTailLists = [ // Ahora será la lista de Postres y Dulces
+const mockTailLists = [
     {
-        name: "Galleta de Pistacho",
-        country: "Artesanal",
-        detail: "Con trozos de pistacho",
-        price: "S/ 8.00",
+        name: "Tropical Bloom",
+        country: "US",
+        detail: "Battle",
+        price: "$10",
     },
     {
-        name: "Croissant de Almendras",
-        country: "Francés",
-        detail: "Relleno de crema de almendras",
-        price: "S/ 10.00",
+        name: "Passionfruit Mint",
+        country: "US",
+        detail: "Battle",
+        price: "$49",
     },
     {
-        name: "Cheesecake de Arándanos",
-        country: "Frutal",
-        detail: "Con salsa de arándanos",
-        price: "S/ 12.00",
+        name: "Citrus Glow",
+        country: "CA",
+        detail: "750 ml",
+        price: "$20",
     },
     {
-        name: "Torta de Chocolate",
-        country: "Intenso",
-        detail: "Bizcocho húmedo con fudge",
-        price: "S/ 12.00",
+        name: "Lavender Fizz",
+        country: "IE",
+        detail: "600 ml",
+        price: "$29",
     },
 ];
 
-const profileLists = [ // Se mantienen los paths, pero ahora podrían ser imágenes de personas disfrutando café
+const profileLists = [
     {
         imgPath: "/images/profile1.png",
     },
@@ -92,37 +86,37 @@ const profileLists = [ // Se mantienen los paths, pero ahora podrían ser imáge
     },
 ];
 
-const featureLists = [ // Características de la cafetería/café
-    "Granos de Origen",
-    "Baristas Expertos",
-    "Ambiente Acogedor",
-    "Postres Frescos Diarios",
+const featureLists = [
+    "Perfectly balanced blends",
+    "Garnished to perfection",
+    "Ice-cold every time",
+    "Expertly shaken & stirred",
 ];
 
-const goodLists = [ // Más detalles/beneficios
-    "Ingredientes Seleccionados",
-    "Tostado Artesanal",
-    "Preparación al Momento",
-    "Variedad de Métodos",
+const goodLists = [
+    "Handpicked ingredients",
+    "Signature techniques",
+    "Bartending artistry in action",
+    "Freshly muddled flavors",
 ];
 
-const storeInfo = { // Información de la cafetería
-    heading: "Dónde Encontrarnos", // Cambiado
-    address: "789, Calle del Café. #101, Lima, Perú 15001", // Cambiado
+const storeInfo = {
+    heading: "Where to Find Us",
+    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
     contact: {
-        phone: "(01) 234-5678", // Cambiado
-        email: "hola@tucafeteria.com", // Cambiado
+        phone: "(555) 987-6543",
+        email: "hello@jsmcocktail.com",
     },
 };
 
-const openingHours = [ // Horarios
-    { day: "Lun–Jue", time: "7:00am – 9pm" }, // Cambiado
-    { day: "Vie", time: "7:00am – 10pm" }, // Cambiado
-    { day: "Sáb", time: "8:00am – 10pm" }, // Cambiado
-    { day: "Dom", time: "8:00am – 8pm" }, // Cambiado
+const openingHours = [
+    { day: "Mon–Thu", time: "11:00am – 12am" },
+    { day: "Fri", time: "11:00am – 2am" },
+    { day: "Sat", time: "9:00am – 2am" },
+    { day: "Sun", time: "9:00am – 1am" },
 ];
 
-const socials = [ // Redes sociales (se mantienen los iconos, pero la URL podría ser la de la cafetería)
+const socials = [
     {
         name: "Instagram",
         icon: "/images/insta.png",
@@ -140,50 +134,50 @@ const socials = [ // Redes sociales (se mantienen los iconos, pero la URL podrí
     },
 ];
 
-const sliderLists = [ // Items para un carrusel de imágenes/productos de café
+const allCocktails = [
     {
         id: 1,
-        name: "Latte Art Maestro", // Cambiado
-        image: "/images/drink1.png", // Podrías cambiar estas imágenes a fotos de café
-        title: "El arte en cada taza", // Cambiado
+        name: "Classic Mojito",
+        image: "/images/drink1.png",
+        title: "Simple Ingredients, Bold Flavor",
         description:
-            "Nuestros baristas crean diseños únicos en cada latte, combinando sabor y belleza. Disfruta de una experiencia visual y gustativa inigualable.", // Cambiado
+            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
         id: 2,
-        name: "Café de Origen Peruano", // Cambiado
+        name: "Raspberry Mojito",
         image: "/images/drink2.png",
-        title: "Sabores auténticos de la tierra", // Cambiado
+        title: "A Zesty Classic That Never Fails",
         description:
-            "Seleccionamos los mejores granos de las regiones cafetaleras de Perú, ofreciendo un perfil de sabor rico y distintivo en cada sorbo.", // Cambiado
+            "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
     },
     {
         id: 3,
-        name: "Postres Caseros", // Cambiado
+        name: "Violet Breeze",
         image: "/images/drink3.png",
-        title: "El acompañamiento perfecto", // Cambiado
+        title: "Simple Ingredients, Bold Flavor",
         description:
-            "Cada día horneamos una variedad de postres frescos, desde galletas crujientes hasta tartas cremosas, ideales para tu café.", // Cambiado
+            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
         id: 4,
-        name: "Ambiente para Trabajar", // Cambiado
+        name: "Curacao Mojito",
         image: "/images/drink4.png",
-        title: "Tu espacio ideal", // Cambiado
+        title: "Crafted With Care, Poured With Love",
         description:
-            "Ofrecemos un ambiente tranquilo y con Wi-Fi, perfecto para estudiar, trabajar o simplemente relajarte con una buena taza de café.", // Cambiado
+            "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
     },
 ];
 
 export {
     navLinks,
-    cocktailLists, // Ahora lista de cafés
-    mockTailLists, // Ahora lista de postres
+    cocktailLists,
+    mockTailLists,
     profileLists,
     featureLists,
     goodLists,
     openingHours,
     storeInfo,
     socials,
-    sliderLists,
+    allCocktails,
 };
